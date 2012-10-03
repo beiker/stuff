@@ -1,0 +1,24 @@
+{
+	"auto_upgrade_last_run": 1349275593,
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"CodeIgniter Snippets",
+		"DetectSyntax",
+		"Djaneiro",
+		"HTML5",
+		"jQuery",
+		"LESS",
+		"LiveReload",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"PlainTasks",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeBlockCursor",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Theme - Soda"
+	]
+}

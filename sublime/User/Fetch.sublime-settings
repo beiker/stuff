@@ -1,0 +1,13 @@
+{
+	"files":
+	{
+		"jquery": "http://code.jquery.com/jquery.min.js"
+	},
+	"packages":
+	{
+		"bootstrap_git": "https://github.com/twitter/bootstrap/zipball/master",
+		"bootstrap_web": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
+		"codeigniter": "http://codeigniter.com/download.php",
+		"html5_boilerplate": "https://github.com/h5bp/html5-boilerplate/zipball/master"
+	}
+}

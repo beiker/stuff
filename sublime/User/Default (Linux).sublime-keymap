@@ -1,0 +1,43 @@
+[
+	{ "keys": ["f1"], "command": "toggle_side_bar" },
+	{ "keys": ["ctrl+0"], "command": "alignment" },
+	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+	{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+e"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+  { "keys": ["f2"], "command": "next_bookmark" },
+  {
+    "keys": ["alt+down"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  {
+    "keys": ["alt+left"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.22, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  {
+    "keys": ["alt+right"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.77, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  { "keys": ["ctrl+{"], "command": "focus_group", "args": { "group": 0 } },
+  { "keys": ["ctrl+}"], "command": "focus_group", "args": { "group": 1 } },
+  { "keys": ["ctrl+3"], "command": "focus_group", "args": { "group": 2 } },
+  { "keys": ["ctrl+4"], "command": "focus_group", "args": { "group": 3 } }
+]
