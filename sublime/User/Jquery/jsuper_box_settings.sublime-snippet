@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+\$.superbox.settings = {
+  boxId: "superbox", // Id attribute of the "superbox" element
+  boxClasses: "", // Class of the "superbox" element
+  overlayOpacity: .8, // Background opaqueness
+  boxWidth: "600", // Default width of the box
+  boxHeight: "400", // Default height of the box
+  loadTxt: "Loading...", // Loading text
+  closeTxt: "Close", // "Close" button text
+  prevTxt: "Previous", // "Previous" button text
+  nextTxt: "Next", // "Next" button text
+  closeOnClick: true,
+  closeEsc: true
+};
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>jsbs</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
