@@ -1,0 +1,35 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * Funcion magica de php que intenta incluir clases automaticamente como ultimo intento
+ *
+ * @author gama
+ */
+function __autoload($class_name) {
+  $clasesPath = array(
+      "core/",
+      "core/system/",
+      "libraries/",
+      'libraries/fpdf/',
+      "models/"
+  );
+
+  foreach ($clasesPath as $clasePath){
+    if(file_exists(APPPATH.$clasePath.$class_name.'.php')){
+      include_once(APPPATH.$clasePath.$class_name.'.php');
+    }else{
+      $class_name_lower = strtolower($class_name);
+
+      //hacemos un ?ltimo intento pero con FirstCharUpper
+      if(file_exists(APPPATH.$clasePath.$class_name_lower.'.php')){
+        include_once(APPPATH.$clasePath.$class_name_lower.'.php');
+      }
+    }
+  }
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>autoload</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php</scope>
+</snippet>

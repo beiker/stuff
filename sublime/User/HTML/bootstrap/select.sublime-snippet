@@ -1,11 +1,11 @@
 <snippet>
   <content><![CDATA[
-\$(function(){
-  \$('${1}').${2}
-});
+<select name="${1}" ${2:multiple="multiple"}>
+  <option>${3:Text}</option>
+</select>
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>jready</tabTrigger>
+  <tabTrigger>boot-form-select</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.js</scope>
+  <!-- <scope>source.python</scope> -->
 </snippet>

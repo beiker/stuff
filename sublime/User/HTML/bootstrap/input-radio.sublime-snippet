@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+<label class="radio${1: inline}">
+  <input type="radio" name="${2:radio}" id="${3:radio}" value="${4:radio}">
+  ${5:Label Text}
+</label>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>boot-form-input</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

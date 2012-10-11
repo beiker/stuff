@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<form class="form-search" action="${1}" method="${2:POST}${3:GET}">
+
+  <div class="${4:input-prepend} ${5:input-append}">
+    <button type="submit" class="btn">Search</button>
+    <input type="text" name="id" id="" class="${6:style} search-query">
+    <button type="submit" class="btn">Search</button>
+  </div>
+
+</form>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>boot-form</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

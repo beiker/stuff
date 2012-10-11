@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<div class="${1:input-prepend} ${2:input-append}">
+${3:
+    <span class="add-on">span</span>
+    <button class="btn" type="button">button</button>}
+
+    <input type="text" name="name" id="id" class="style" placeholder="Text input">
+${5:
+    <span class="add-on">span</span>
+    <button class="btn" type="button">button</button>}
+</div>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>boot-form-input</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

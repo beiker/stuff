@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+<address>
+  <strong>${1:Twitter, Inc.}</strong><br>
+  ${2:${3:Address}<br>}
+  ${4:<a href="mailto:#">${5:first.last@gmail.com}</a>}
+</address>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>boot-address</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<form class="form-horizontal" action="${1}" method="${2:POST}${3:GET}" ${4:enctype="multipart/form-data"}>
+  ${5:
+    <div class="control-group">
+      <label class="control-label" for="id">Label</label>
+      <div class="controls">
+        <input type="text" name="" id="" class="" placeholder="placeholder">
+        <button type="submit" class="btn">Sign in</button>
+      </div>
+    </div>}
+</form>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>boot-form</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

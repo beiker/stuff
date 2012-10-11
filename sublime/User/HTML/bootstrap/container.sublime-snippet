@@ -1,11 +1,11 @@
 <snippet>
   <content><![CDATA[
-\$(function(){
-  \$('${1}').${2}
-});
+<div class="container${1}">
+  ${2}
+</div>
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>jready</tabTrigger>
+  <tabTrigger>boot-container</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.js</scope>
+  <!-- <scope>source.python</scope> -->
 </snippet>

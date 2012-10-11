@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+<blockquote ${1:class="pull-right"}>
+  <p>${2:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.}</p>
+  ${3:<small>${4:Someone famous}${5:<cite title="Source Title">Source Title</cite>}</small>}
+</blockquote>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>boot-blockquote</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

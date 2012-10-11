@@ -1,11 +1,11 @@
 <snippet>
   <content><![CDATA[
-\$(function(){
-  \$('${1}').${2}
-});
+<ul ${1:class="unstyled"}>
+  ${2:<li>${3}</li>}
+</ul>
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>jready</tabTrigger>
+  <tabTrigger>boot-ul</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.js</scope>
+  <!-- <scope>source.python</scope> -->
 </snippet>

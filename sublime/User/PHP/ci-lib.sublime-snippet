@@ -1,0 +1,38 @@
+<snippet>
+  <content><![CDATA[
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/**
+ * My CodeIgniter Library
+ *
+ * @author  Indigo Dev Team
+ * @since   Version 1.0
+ * @filesource
+ */
+
+// ------------------------------------------------------------------------
+
+class ${1:${TM_FILENAME/(.+)\..+|.*/\u$1/:Controllername}} {
+
+  // Vars
+
+  /**
+   * Constructor
+   * @param  array \$params=array()
+   */
+  public function __construct(\$params=array())
+  {
+    \$this->CI =& get_instance();
+    ${2}
+
+    log_message('debug', "${1:${TM_FILENAME/(.+)\..+|.*/\u$1/:Controllername}} Class Initialized");
+  }
+
+}
+/* End of file ${TM_FILENAME:${1/(.+)/\l$1.php/}} */
+/* Location: ./${TM_FILEPATH/.+((?:application).+)/$1/:application/controllers/${1/(.+)/\l$1.php/}} */
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ci-lib</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php</scope>
+</snippet>

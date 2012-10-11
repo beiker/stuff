@@ -1,11 +1,9 @@
 <snippet>
   <content><![CDATA[
-\$(function(){
-  \$('${1}').${2}
-});
+<input type="text" name="${1:name}" id="${2:id}" class="${3:style}" placeholder="${4:Text input}">
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>jready</tabTrigger>
+  <tabTrigger>boot-form-input</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.js</scope>
+  <!-- <scope>source.python</scope> -->
 </snippet>
