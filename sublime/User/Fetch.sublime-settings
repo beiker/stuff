@@ -1,7 +1,8 @@
 {
 	"files":
 	{
-		"jquery": "http://code.jquery.com/jquery.min.js"
+		"jquery": "http://code.jquery.com/jquery.min.js",
+		"requirejs": "http://requirejs.org/docs/release/2.1.0/minified/require.js"
 	},
 	"packages":
 	{

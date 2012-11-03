@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<div class="control-group">
+  <label class="control-label" for="name">Label</label>
+  <div class="controls">
+    <input type="text" name="name" id="name" class="" value="" size="">
+  </div>
+</div>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>boot-control-group</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

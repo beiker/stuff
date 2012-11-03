@@ -1,12 +1,12 @@
 {
-	"auto_upgrade_last_run": 1349275593,
+	"auto_upgrade_last_run": 1351972610,
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"Alignment",
 		"CodeIgniter Snippets",
 		"DetectSyntax",
 		"Djaneiro",
+		"DocBlockr",
 		"HTML5",
 		"jQuery",
 		"LESS",
@@ -19,6 +19,7 @@
 		"SublimeBlockCursor",
 		"SublimeCodeIntel",
 		"SublimeLinter",
+		"Theme - Phoenix",
 		"Theme - Soda"
 	]
 }

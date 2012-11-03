@@ -3,7 +3,7 @@
 	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
 	"detect_indentation": false,
 	"draw_minimap_border": true,
-	"font_size": 9,
+	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -11,13 +11,20 @@
 		"SublimeCodeIntel",
 		"LiveReload"
 	],
+	"phoenix_color_blue": true,
+	"phoenix_dirty_bottom_bar": true,
+	"phoenix_dirty_bottom_bar_red": true,
+	"phoenix_eighties": true,
+	"phoenix_highlight_current_tab": true,
+	"phoenix_solid_current_tab": true,
+	"phoenix_tabs_auto_width": true,
 	"rulers":
 	[
 		79
 	],
 	"soda_classic_tabs": true,
 	"tab_size": 2,
-	"theme": "Soda Dark.sublime-theme",
+	"theme": "Phoenix Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true
