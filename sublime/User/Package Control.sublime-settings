@@ -1,14 +1,16 @@
 {
-	"auto_upgrade_last_run": 1351972610,
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"Alignment",
 		"CodeIgniter Snippets",
+		"Dayle Rees Color Schemes",
 		"DetectSyntax",
 		"Djaneiro",
 		"DocBlockr",
 		"HTML5",
 		"jQuery",
+		"laravel-blade",
 		"LESS",
 		"LiveReload",
 		"Nettuts+ Fetch",

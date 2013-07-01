@@ -1,0 +1,50 @@
+<snippet>
+  <content><![CDATA[
+<!DOCTYPE html>
+<html lang="${1:en|es}">
+
+  <head>
+
+    <!-- ((START META)) -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!-- ((END META)) -->
+
+    <!-- ((START CSS)) -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
+    <!-- ((END CSS)) -->
+
+    <title>${2:title here}</title>
+  </head>
+
+  <body>
+
+    ${3:<div>CONTENT HERE</div>}
+
+    <!-- ((START SCRIPTS)) -->
+
+      <!-- PHONEGAP -->
+      <script type="text/javascript" src="cordova-2.5.0.js"></script>
+
+      <!-- JQUERY MIN & JQUERYMOBILE MIN -->
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+
+      <!-- JS PROJECT -->
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type="text/javascript">
+          app.initialize();
+      </script>
+
+    <!-- ((END SCRIPTS)) -->
+
+  </body>
+</html>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>html5-pg-jqm</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html</scope>
+</snippet>

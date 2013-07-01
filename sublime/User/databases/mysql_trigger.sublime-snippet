@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+DROP TRIGGER IF EXISTS ${1:nombre_trigger};
+DELIMITER \$\$
+CREATE TRIGGER ${2:nombre_trigger} AFTER INSERT ON ${3:tabla}
+  FOR EACH ROW BEGIN
+
+    ${4:codigo_aqui}
+    INSERT INTO cajas_inventario (id_productor, id_variedad, id_caja, fecha, concepto, cantidad, chofer, tipo)
+    VALUES (NEW.id_productor, NEW.id_variedad, NEW.id_caja, NEW.fecha, 'Registro de entradas cajas', NEW.cajas, '', 'en');
+
+  END\$\$
+DELIMITER ;
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>mysql_trigger</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.txt</scope> -->
+</snippet>
+

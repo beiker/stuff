@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<!DOCTYPE html>
+<html lang="${1:en|es}">
+  <head>
+    <meta charset="utf-8">
+    <title>${2:title}</title>
+  </head>
+  <body>
+    ${3}
+  </body>
+</html>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>html5</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html</scope>
+</snippet>

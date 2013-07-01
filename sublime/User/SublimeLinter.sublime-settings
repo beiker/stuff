@@ -2,5 +2,9 @@
    "sublimelinter_executable_map":
     {
       "php": "/opt/lampp/bin/php"
-    }
+    },
+    "sublimelinter_disable":
+    [
+      "javascript"
+    ]
 }

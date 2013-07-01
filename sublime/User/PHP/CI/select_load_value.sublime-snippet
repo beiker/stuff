@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+<select name="${1:name}" id="${1:name}" class="${2:span1}">
+  <option value="\$${3:value}" <?php echo set_select('${1:name}', '\$${3:value}', false, (isset(\$${4:info['info']->var})?\$${4:info['info']->var}:'')); ?>><?php echo \$${5:text}?></option>
+</select>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ci_select_load_value</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html</scope>
+</snippet>

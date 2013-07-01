@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+<input type="${1:text}" name="${2:name}" id="${2:name}" class="${3:span1}"
+  value="<?php echo set_value('${2:name}'); ?>" ${4:maxlength="${5:100}"} ${6:required} ${7:autofocus}>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ci_input_set_value</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html</scope>
+</snippet>

@@ -1,0 +1,240 @@
+<snippet>
+  <content><![CDATA[
+<?php
+
+class ${1:${TM_FILENAME/(.+)\..+|.*/\u$1/:Controllername}} extends \BaseController {
+
+  /**
+   * Display a listing of the resource.
+   *
+   * @return Response
+   */
+  public function getIndex()
+  {
+    \$scripts = array(
+      static::\$jsDir.'panel/msgbox.js',
+    );
+
+    \$pagination = Model::getAll(40);
+
+    \$resource = \$pagination['items'];
+
+    \$title = 'title';
+
+    \$styles  = static::\$styles;
+    \$scripts = array_merge(static::\$scripts, \$scripts);
+
+    return View::make('path.to.view')
+      ->with(compact('title', 'styles', 'scripts', 'resource'));
+  }
+
+  /**
+   * Show the form for creating a new resource.
+   *
+   * @return Response
+   */
+  public function getCreate()
+  {
+    \$styles = array(
+      static::\$libsDir.'',
+      static::\$cssDir.'',
+    );
+
+    \$scripts = array(
+      static::\$libsDir.'',
+      static::\$jsDir.'',
+    );
+
+    \$title      = 'Crear -----';
+    \$crumbTitle = 'Agregar ----';
+
+    \$styles  = array_merge(static::\$styles, \$styles);
+    \$scripts = array_merge(static::\$scripts, \$scripts);
+
+    return View::make('path.to.view')
+      ->with(compact('title', 'crumbTitle', 'styles', 'scripts'));
+  }
+
+  /**
+   * Store a newly created resource in storage.
+   *
+   * @return Response
+   */
+  public function postStore()
+  {
+    \$validation = new Services\Validators;
+
+    if (\$validation->passes())
+    {
+      // \$resource = new Model;
+
+      // \$resource->field = Input::get('field');
+
+      // \$resource->save();
+
+      \$noty = Util::noty('----- creado correctamente', 'success');
+
+      return Redirect::route('-----_create')
+        ->with(compact('noty'));
+    }
+
+    return Redirect::route('-----_create')
+      ->withErrors(\$validation->errors)
+      ->withInput();
+  }
+
+  /**
+   * Display the specified resource.
+   *
+   * @param  int  \$id
+   * @return Response
+   */
+  public function getShow(\$id)
+  {
+    return 'show ' . \$id;
+  }
+
+  /**
+   * Show the form for editing the specified resource.
+   *
+   * @param  int  \$id
+   * @return Response
+   */
+  public function getEdit(\$id=0)
+  {
+    \$styles = array(
+      static::\$libsDir.'',
+      static::\$cssDir.'',
+    );
+
+    \$scripts = array(
+      static::\$libsDir.'',
+      static::\$jsDir.'',
+    );
+
+    \$title      = 'Editar -----';
+    \$crumbTitle = 'Editar -----';
+
+    // Obtiene el recurso del id especificado, si es null muestra
+    // un msg de error.
+    if (is_null(\$resource = Model::find(\$id)))
+    {
+      \$noty = Util::noty('El ----- no existe');
+      return Redirect::route('-----_index')
+        ->with(compact('noty'));
+    }
+
+    \$styles  = array_merge(static::\$styles, \$styles);
+    \$scripts = array_merge(static::\$scripts, \$scripts);
+
+    return View::make('path.to.view')
+      ->with(compact('title', 'crumbTitle', 'styles', 'scripts', 'resource'));
+  }
+
+  /**
+   * Update the specified resource in storage.
+   *
+   * @param  int  \$id
+   * @return Response
+   */
+  public function putUpdate(\$id)
+  {
+    \$validation = new Services\Validators;
+
+    if (\$validation->passes())
+    {
+      // \$resource = Model::find(\$id);
+
+      // \$resource->field = Input::get('field');
+
+      // \$resource->save();
+
+      \$noty = Util::noty('El ----- se actualizo correctamente!', 'success');
+
+      return Redirect::route('-----_edit', array(\$id))
+        ->with(compact('noty'));
+    }
+
+    return Redirect::route('-----_edit', array(\$id))
+      ->withErrors(\$validation->errors);
+  }
+
+  /**
+   * Remove the specified resource from storage.
+   *
+   * @param  int  \$id
+   * @return Response
+   */
+  public function getDelete(\$id)
+  {
+    \$notyMsg = 'El ----- no existe';
+    \$notyIco = 'error';
+    if ( ! is_null(\$resource = Model::withTrashed()->find(\$id)))
+    {
+      \$notyMsg = 'El ----- se elimino correctamente!';
+      \$notyIco = 'success';
+
+      \$resource->forceDelete();
+    }
+
+    \$noty = Util::noty(\$notyMsg, \$notyIco);
+
+    return Redirect::route('-----_index')
+      ->with(compact('noty'));
+  }
+
+  /**
+   * Deactiva the specified resource from storage.
+   *
+   * @param  int  \$id
+   * @return Response
+   */
+  public function getSoftdelete(\$id)
+  {
+    \$notyMsg = 'El ----- no existe';
+    \$notyIco = 'error';
+    if ( ! is_null(\$resource = Model::find(\$id)))
+    {
+      \$notyMsg = 'El ----- se desactivo correctamente!';
+      \$notyIco = 'success';
+
+      \$resource->delete();
+    }
+
+    \$noty = Util::noty(\$notyMsg, \$notyIco);
+
+    return Redirect::route('-----_index')
+      ->with(compact('noty'));
+  }
+
+  /**
+   * Restore the specified resource from storage.
+   *
+   * @param  int  \$id
+   * @return Response
+   */
+  public function getRestore(\$id)
+  {
+    \$notyMsg = 'El ----- no existe';
+    \$notyIco = 'error';
+    if ( ! is_null(\$resource = Model::withTrashed()->find(\$id)))
+    {
+      \$notyMsg = 'El ----- se activo correctamente!';
+      \$notyIco = 'success';
+
+      \$resource->restore();
+    }
+
+    \$noty = Util::noty(\$notyMsg, \$notyIco);
+
+    return Redirect::route('-----_index')
+      ->with(compact('noty'));
+  }
+
+}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>laravel_controller</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.php</scope> -->
+</snippet>

@@ -1,0 +1,33 @@
+<snippet>
+  <content><![CDATA[
+{
+  "folders":
+  [
+    {
+     "path": "/opt/lampp/htdocs/${1:proyecto}/",
+     "folder_exclude_patterns": ["${2:proyecto}/system",
+                                  "cache",
+                                  "errors",
+                                  "hooks",
+                                  "language",
+                                  "logs",
+                                  "third_party",
+                                  "images",
+                                  "media",
+                                  "htaccess"],
+     "file_exclude_patterns": ["index.html",
+                               "index.php",
+                               "*.sql",
+                               "*.txt",
+                               "*.md"]
+    }
+  ]
+}
+
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>CodeIgniterProjectStruture</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.sublime-project</scope> -->
+</snippet>
