@@ -43,6 +43,11 @@
   { "keys": ["ctrl+3"], "command": "focus_group", "args": { "group": 2 } },
   { "keys": ["ctrl+4"], "command": "focus_group", "args": { "group": 3 } },
   { "keys": ["f11"], "command": "toggle_distraction_free" },
-  { "keys": ["shift+f11"], "command": "toggle_full_screen" }
+  { "keys": ["shift+f11"], "command": "toggle_full_screen" },
+  { "keys": ["ctrl+shift+m"], "command": "toggle_minimap" },
+  { "keys": ["ctrl+shift+t"], "command": "toggle_tabs" },
+  { "keys": ["f4"], "command": "fold" },
+  { "keys": ["f5"], "command": "unfold" },
+  { "keys": ["f6"], "command": "fold_by_level", "args": {"level": 2} }
 ]
 

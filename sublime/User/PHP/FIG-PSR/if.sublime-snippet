@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+if (${1})
+{
+  ${2:// if body}
+}
+]]></content>
+    <tabTrigger>if</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR if</description>
+</snippet>

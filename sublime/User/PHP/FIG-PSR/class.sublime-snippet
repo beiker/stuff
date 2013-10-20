@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+class ${1:ClassName} {
+
+    /**
+     * Constructor.
+     *
+     * @return void
+     */
+    function __construct()
+    {
+        # code...
+    }
+}
+
+]]></content>
+    <tabTrigger>class</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR Class</description>
+</snippet>

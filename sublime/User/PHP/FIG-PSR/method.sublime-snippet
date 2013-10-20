@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+${1:public} function ${2:methodName}(${3:\$arg1, &\$arg2, \$arg3 = array()})
+{
+  ${4:# code...}
+}
+]]></content>
+    <tabTrigger>fun</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR Method</description>
+</snippet>

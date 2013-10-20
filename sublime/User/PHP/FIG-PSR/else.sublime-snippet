@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+else
+{
+  ${1:// else body}
+}
+]]></content>
+    <tabTrigger>else</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR else</description>
+</snippet>

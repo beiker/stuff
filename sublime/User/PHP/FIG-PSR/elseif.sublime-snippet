@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+elseif (${1})
+{
+  ${2:// elseif body}
+}
+]]></content>
+    <tabTrigger>elseif</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR elseif</description>
+</snippet>

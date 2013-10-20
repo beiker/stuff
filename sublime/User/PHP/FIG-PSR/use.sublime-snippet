@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[use ${2:OtherVendor\OtherPackage\BazClass};]]></content>
+    <tabTrigger>use</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR use</description>
+</snippet>

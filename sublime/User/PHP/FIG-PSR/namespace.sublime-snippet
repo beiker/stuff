@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[namespace ${1:Vendor\Package};]]></content>
+    <tabTrigger>namespace</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR namespace</description>
+</snippet>

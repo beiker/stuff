@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+<?php ${1:namespace Vendor\Package;}
+
+interface ${2:Foo}Interface {
+
+  public function bar();
+
+}
+]]></content>
+    <tabTrigger>interface</tabTrigger>
+    <scope>text.html - source.php</scope>
+    <description>PSR Interface Full</description>
+</snippet>

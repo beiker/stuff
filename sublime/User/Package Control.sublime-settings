@@ -1,25 +1,22 @@
 {
-	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"Alignment",
 		"CodeIgniter Snippets",
 		"Dayle Rees Color Schemes",
-		"DetectSyntax",
 		"Djaneiro",
 		"DocBlockr",
 		"HTML5",
 		"jQuery",
-		"laravel-blade",
+		"Laravel Blade Highlighter",
 		"LESS",
-		"LiveReload",
 		"Nettuts+ Fetch",
 		"Package Control",
 		"PlainTasks",
+		"Pretty JSON",
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeBlockCursor",
-		"SublimeCodeIntel",
 		"SublimeLinter",
 		"Theme - Phoenix",
 		"Theme - Soda"

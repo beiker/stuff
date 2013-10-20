@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+do
+{
+  ${2:// structure body}
+} while (${1:expr});
+]]></content>
+    <tabTrigger>do</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR dowhile</description>
+</snippet>

@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+<?php ${1:namespace Vendor\Package;}
+
+${2:use OtherVendor\OtherPackage\BazClass;}
+
+class ${3:ClassName} {
+
+  /**
+   * Constructor.
+   *
+   * @return void
+   */
+  function __construct()
+  {
+    # code...
+  }
+
+  /**
+   * SampleFunction
+   *
+   * @return void
+   */
+  public function sampleFunction()
+  {
+    # code...
+  }
+
+}
+
+]]></content>
+    <tabTrigger>classf</tabTrigger>
+    <scope>text.html - source.php</scope>
+    <description>PSR Class Full</description>
+</snippet>

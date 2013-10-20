@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+switch (${1:expr})
+{
+  case 0:
+    break;
+  default:
+    echo 'Default case';
+    break;
+}
+]]></content>
+    <tabTrigger>switch</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR switch</description>
+</snippet>

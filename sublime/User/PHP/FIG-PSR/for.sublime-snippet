@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+for ($i = 0; $i < 10; $i++)
+{
+  ${1:// for body}
+}
+]]></content>
+    <tabTrigger>for</tabTrigger>
+    <scope>source.php</scope>
+    <description>PSR for</description>
+</snippet>
