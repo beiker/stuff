@@ -1,11 +1,11 @@
 <snippet>
   <content><![CDATA[
-var ${1:name} = function (${2}) {
+var ${1} = function (${2}) {
   ${3}
 };
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>varfunc</tabTrigger>
+  <tabTrigger>vf</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
 </snippet>

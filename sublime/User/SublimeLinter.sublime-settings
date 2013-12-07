@@ -1,13 +1,16 @@
 {
    "sublimelinter_popup_errors_on_save": false,
-   "sublimelinter_mark_style": "none",
+   "sublimelinter_mark_style": "outline",
    "sublimelinter_gutter_marks": true,
+   "sublimelinter_gutter_marks_theme": "hard",
    "sublimelinter_executable_map":
     {
-      "php": "/opt/lampp/bin/php"
+      //"php": "/opt/lampp/bin/php"
+      "php": "/usr/bin/php5",
+      "node": "/user/local/bin/node"
     },
     "sublimelinter_disable":
     [
-      "javascript"
-    ]
+    ],
+    "javascript_linter": "jshint"
 }
